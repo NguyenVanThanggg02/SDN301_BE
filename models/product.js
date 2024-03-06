@@ -1,51 +1,40 @@
 import mongoose, { Schema } from "mongoose";
 
-const productSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-  },
-  price: {
-    type: Number,
-    default: 0,
-    validate(value) {
-      if (value < 0)
-        throw new Error(
-          "Price must be a number and greater than or equal zero"
-        );
+const productSchema = new Schema({
+    name: {
+        type: String,
+        required: [true, 'ProductName is required'],
+        unique: [true, 'Product name is not duplicate']
     },
-  },
-  description: {
-    type: String,
-  },
-  colors: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Color",
+    price: {
+        type: Number,
+        required: true
     },
-  ],
-  images: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Image",
+    size: {
+        type: Number,
+        required: true
     },
-  ],
-  quantity: {
-    type: Number,
-    default: 0,
-  },
-  costPrice: {
-    type: Number,
-  },
-  salePrice: {
-    type: Number,
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now,
-  },
+    quantity: {
+        type: Number,
+        required: true
+    },
+    total_cost: {
+        type: Number,
+        required: true
+    },
+    brand: {
+        type: String,
+    },
+    description: {
+        type: String,
+    },
+    image: {
+        type: String // Assuming you'll store image paths
+    }
+}, {
+    timestamps: true
 });
 
-const Product = mongoose.model("Product", productSchema);
+const Product = mongoose.model('products', productSchema);
 
 export default Product;
