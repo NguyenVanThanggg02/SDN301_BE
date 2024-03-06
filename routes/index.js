@@ -1,7 +1,5 @@
-import ProductRouter from './product.js';
-import CategoryRouter from './category.js';
+import usertRouter from "./userRou.js"
 
 export{
-    ProductRouter,
-    CategoryRouter
+    usertRouter
 }
