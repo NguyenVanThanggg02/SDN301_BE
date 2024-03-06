@@ -1,4 +1,15 @@
-import userRepo from "./userRepo.js";
- export{
-    userRepo
- }
+import cateDAO from './categories.js'
+import commentDAO from './comments.js'
+import imageDAO from './images.js'
+import productDAO from './product.js'
+import userDAO from './user.js'
+
+
+export {
+    productDAO,
+    userDAO,
+    commentDAO,
+    imageDAO,
+    cateDAO
+}
+

@@ -1,5 +1,15 @@
-import userControll from "./userControll.js";
- 
+import cateController from './categories.js'
+import commentController from './comments.js'
+import imageController from './images.js'
+import productController from './product.js'
+import userController from './user.js'
+
+
 export {
-    userControll
+    productController,
+    userController,
+    commentController,
+    imageController,
+    cateController
 }
+
