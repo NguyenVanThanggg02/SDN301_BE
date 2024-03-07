@@ -39,6 +39,17 @@ const getAllUsers = async (req, res) => {
   }
 };
 
+const getUserByUsername = async (req, res) => {
+  try {
+    const username = await userDAO.getUserByUsername(req.params.username);
+    res.status(200).json(username);
+  } catch (error) {
+    res.status(500).json({
+      error: error.toString(),
+    });
+  }
+};
+
 // Create a new product
 const createUser = async (req, res) => {
   // Lấy dữ liệu từ yêu cầu
@@ -63,20 +74,21 @@ const updateUser = async (req, res) => {
   }
 };
 const deleteUser = async (req, res) => {
-    try {
-        const deleteUser = await userDAO.deleteUser(req.params.id);
-        res.status(200).json(deleteUser);
-    } catch (error) {
-        res.status(500).json({ 
-            error: error.toString() 
-        }); 
-    }
-}
+  try {
+    const deleteUser = await userDAO.deleteUser(req.params.id);
+    res.status(200).json(deleteUser);
+  } catch (error) {
+    res.status(500).json({
+      error: error.toString(),
+    });
+  }
+};
 
 export default {
   getAllUsers,
+  getUserByUsername,
   createUser,
   loginUser,
   updateUser,
-  deleteUser
+  deleteUser,
 };

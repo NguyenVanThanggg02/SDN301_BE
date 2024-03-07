@@ -3,13 +3,16 @@ import commentRouter from './comments.js'
 import imageRouter from './images.js'
 import productRouter from './product.js'
 import userRouter from './user.js'
-
+import brandRouter from './brand.js'
+import colorRouter from './color.js'
 
 export {
     productRouter,
     userRouter,
     commentRouter,
     imageRouter,
-    cateRouter
+    cateRouter,
+    brandRouter,
+    colorRouter
 }
 

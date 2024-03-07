@@ -3,6 +3,8 @@ import commentController from './comments.js'
 import imageController from './images.js'
 import productController from './product.js'
 import userController from './user.js'
+import brandController from './brand.js';
+import colorController from './color.js';
 
 
 export {
@@ -10,6 +12,8 @@ export {
     userController,
     commentController,
     imageController,
-    cateController
+    cateController,
+    brandController,
+    colorController
 }
 
