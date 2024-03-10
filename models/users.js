@@ -6,7 +6,6 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: "" 
 
-      // required: true,
     },
     username: {
       type: String,
@@ -16,8 +15,6 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: "" 
 
-      // required: true,
-      // unique: true,
     },
     password: {
       type: String,
@@ -25,28 +22,24 @@ const userSchema = new mongoose.Schema(
     },
     gender: {
       type: String,
-      enum: ["Male", "Female", "Other"],
-      default: "Other",
+      enum: ["Male", "Female", ""],
+      default: "",
     },
     birthday: {
       type: Date,
-      default: "" 
-      // required: true,
+      default: null 
     },
     phone: {
       type: Number,
       default: "" 
-      // required: true,
     },
     address: {
       type: String,
       default: "" 
-      // required: true,
     },
     role: {
-      type: String,
-      enum: ["Admin", "User"],
-      default: "User",
+      type: Number,
+      default: 0,
     },
   },
   {
