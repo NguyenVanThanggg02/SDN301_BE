@@ -1,43 +1,51 @@
-// models/users.js
-
 import mongoose, { Schema } from "mongoose";
 
-const userSchema = new Schema({
+const userSchema = new mongoose.Schema(
+  {
+    full_name: {
+      type: String,
+      default: "" 
+
+    },
     username: {
-        type: String,
-        required: true,
+      type: String,
+      required: true,
+    },
+    Email: {
+      type: String,
+      default: "" 
+
     },
     password: {
-        type: String,
-        required: true,
-    },
-    full_name: {
-        type: String,
-        default: "" 
+      type: String,
+      required: true,
     },
     gender: {
-        type: Boolean,
-        default: false 
+      type: String,
+      enum: ["Male", "Female", ""],
+      default: "",
     },
     birthday: {
-        type: Date,
-        default: null 
+      type: Date,
+      default: null 
     },
     phone: {
-        type: String,
-        default: "" 
+      type: Number,
+      default: "" 
     },
     address: {
-        type: String,
-        default: "" 
+      type: String,
+      default: "" 
     },
     role: {
-        type: Number,
-        default: 0 
+      type: Number,
+      default: 0,
     },
-}, {
-    timestamps: true
-});
+  },
+  {
+    timestamps: true,
+  }
+);
 
 const Users = mongoose.model("users", userSchema);
 
