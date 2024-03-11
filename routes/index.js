@@ -5,6 +5,8 @@ import productRouter from './product.js'
 import userRouter from './user.js'
 import brandRouter from './brand.js'
 import colorRouter from './color.js'
+import sizeRouter from './size.js'
+
 
 export {
     productRouter,
@@ -13,6 +15,7 @@ export {
     imageRouter,
     cateRouter,
     brandRouter,
-    colorRouter
+    colorRouter,
+    sizeRouter
 }
 
