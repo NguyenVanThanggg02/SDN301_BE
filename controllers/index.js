@@ -12,7 +12,7 @@ export {
     userController,
     commentController,
     imageController,
-    cateController,
+   
     brandController,
     colorController
 }
