@@ -1,7 +1,7 @@
 // import express module
 import express, { json } from 'express';
 import * as dotenv from 'dotenv';
-import {CategoryRouter, ProductRouter} from './routes/index.js';
+import {UserRouter} from './routes/index.js';
 import connectDB from './database/database.js';
 
 // Thực thi cấu hình ứng dụng sử dụng file .env
@@ -16,6 +16,7 @@ app.get('/', (req, res)=>{
 })
 
 // app.use('/products', ProductRouter);
+app.use('/user', UserRouter);
 // app.use('/categories', CategoryRouter);
 
 

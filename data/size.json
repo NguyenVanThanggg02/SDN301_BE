@@ -1,0 +1,13 @@
+[
+    {
+        "productId": {
+            "$oid": "65b558c6ab40ed82dd177ef8"
+        },
+        "sizes": [
+            {
+                "size": 43,
+                "quantity": 2
+            }
+        ]
+    }
+]
