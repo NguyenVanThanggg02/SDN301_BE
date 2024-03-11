@@ -19,4 +19,3 @@ const Comment = mongoose.model('comment', commentSchema);
 
 export default Comment
 export {commentSchema};
-
