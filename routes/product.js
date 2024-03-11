@@ -1,21 +1,15 @@
-// import express from 'express';
-// import { ProductController } from '../controllers/index.js';
+import express from "express";
+import { productController } from "../controllers/index.js";
 
-// const productRouter = express.Router();
+const productRouter = express.Router();
 
-// // GET: /products -> Get all products
-// productRouter.get('/', ProductController.getProducts);
+//get all products
+productRouter.get('/', productController.getAllProducts);
 
-// // GET: /products/:id -> Get product by Id
-// productRouter.get('/:id', ProductController.getProductById);
 
-// // POST: /products -> Create a new product
-// productRouter.post('/', ProductController.createProduct);
+//get product
+productRouter.get('/:id', productController.getProductById);
+//POSR :/products
+productRouter.post('/createProduct', productController.createProduct);
 
-// // PUT: /products/:id
-// productRouter.put("/:id", ProductController.editProduct);
-
-// // DELETE: /products/:id
-// productRouter.delete("/:id", ProductController.deleteProduct);
-
-// export default productRouter;
+export default productRouter

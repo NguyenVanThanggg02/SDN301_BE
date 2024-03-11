@@ -2,44 +2,44 @@ import mongoose, { Schema } from "mongoose";
 
 const userSchema = new mongoose.Schema(
   {
-    FullName: {
+    full_name: {
       type: String,
-      required: true,
+      default: "" 
+
     },
-    userName: {
+    username: {
       type: String,
       required: true,
     },
     Email: {
       type: String,
-      required: true,
-      unique: true,
+      default: "" 
+
     },
-    Password: {
+    password: {
       type: String,
       required: true,
     },
-    Gender: {
+    gender: {
       type: String,
-      enum: ["Male", "Female", "Other"],
-      default: "Other",
+      enum: ["Male", "Female", ""],
+      default: "",
     },
-    Dob: {
+    birthday: {
       type: Date,
-      required: true,
+      default: null 
     },
-    Phone: {
+    phone: {
       type: Number,
-      required: true,
+      default: "" 
     },
-    Address: {
+    address: {
       type: String,
-      required: true,
+      default: "" 
     },
-    Role: {
-      type: String,
-      enum: ["Admin", "User"],
-      default: "User",
+    role: {
+      type: Number,
+      default: 0,
     },
   },
   {
@@ -47,6 +47,6 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-const User = mongoose.model("User", userSchema);
+const Users = mongoose.model("users", userSchema);
 
-export default User;
+export default Users;
