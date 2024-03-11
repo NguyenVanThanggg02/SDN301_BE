@@ -9,9 +9,6 @@ const commentSchema = new Schema({
     },
     author: {
         type: String,
-    },
-    productId: {
-        type: Schema.Types.ObjectId,
     }
 }, {
     timestamps: true
@@ -21,4 +18,5 @@ const commentSchema = new Schema({
 const Comment = mongoose.model('comment', commentSchema);
 
 export default Comment
+export {commentSchema};
 

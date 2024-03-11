@@ -1,4 +1,7 @@
 import mongoose, { Schema } from "mongoose";
+import { commentSchema } from "./comments.js";
+import { imageSchema } from "./images.js";
+
 
 const productSchema = new Schema({
     name: {
@@ -11,8 +14,9 @@ const productSchema = new Schema({
         required: true
     },
     size: {
-        type: Number,
-        required: true
+        type: Schema.Types.ObjectId,
+      ref: "sizes",
+      require: true,
     },
     quantity: {
         type: Number,
@@ -23,14 +27,20 @@ const productSchema = new Schema({
         required: true
     },
     brand: {
-        type: String,
+        type: Schema.Types.ObjectId,
+        ref: "brands",
+        require: true,
+    },
+    color:{
+        type: Schema.Types.ObjectId,
+      ref: "color",
+      require: true,
     },
     description: {
         type: String,
     },
-    image: {
-        type: String // Assuming you'll store image paths
-    }
+    images: [imageSchema],
+    comments: [commentSchema],
 }, {
     timestamps: true
 });

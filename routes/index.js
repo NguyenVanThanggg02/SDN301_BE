@@ -3,6 +3,7 @@ import commentRouter from './comments.js'
 import imageRouter from './images.js'
 import productRouter from './product.js'
 import userRouter from './user.js'
+import sizeRouter from './size.js'
 
 
 export {
@@ -10,6 +11,7 @@ export {
     userRouter,
     commentRouter,
     imageRouter,
-    cateRouter
+    cateRouter,
+    sizeRouter
 }
 
