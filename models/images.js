@@ -10,6 +10,10 @@ const imageSchema = new Schema({
     },
     size: {
         type: String,
+    },
+    productId: {
+        type: Schema.Types.ObjectId,
+        ref: 'products', // 'Product' là tên của model sản phẩm
     }
 }, {
     timestamps: true
