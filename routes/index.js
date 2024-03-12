@@ -5,7 +5,6 @@ import productRouter from './product.js'
 import userRouter from './user.js'
 import sizeRouter from './size.js'
 
-
 export {
     productRouter,
     userRouter,

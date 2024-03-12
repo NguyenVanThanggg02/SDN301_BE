@@ -40,10 +40,7 @@ const getProductById = async (req, res) => {
         const productId = req.params.id
         const allProducts = await productDAO.fetchAllProductById(productId);
         if (allProducts) {
-            res.status(200).json({
-                message: "Load data successfully",
-                data: allProducts,
-            })
+            res.status(200).json(allProducts)
         } else {
             res.status(404).json('Not found')
         }
