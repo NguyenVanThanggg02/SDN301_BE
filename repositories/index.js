@@ -1,21 +1,21 @@
-import cateRouter from './categories.js'
-import commentRouter from './comments.js'
-import imageRouter from './images.js'
-import productRouter from './product.js'
-import userRouter from './user.js'
-import brandRouter from './brand.js'
-import colorRouter from './color.js'
-import sizeRouter from './size.js'
+import cateDAO from './categories.js'
+import commentDAO from './comments.js'
+import imageRepo from './images.js'
+import productDAO from './product.js'
+import userDAO from './user.js'
+import brandDAO from './brand.js'
+import colorDAO from './color.js'
+import sizeRepo from './size.js'
 
 
 export {
-    productRouter,
-    userRouter,
-    commentRouter,
-    imageRouter,
-    cateRouter,
-    brandRouter,
-    colorRouter,
-    sizeRouter
+    productDAO,
+    userDAO,
+    commentDAO,
+    imageRepo,
+    cateDAO,
+    brandDAO,
+    colorDAO,
+    sizeRepo
 }
 
