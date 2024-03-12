@@ -14,6 +14,6 @@ const categorySchema = new Schema({
 });
 
 // Tạo model từ schema
-const Category = mongoose.model('category', categorySchema);
+const Category = mongoose.model('categories', categorySchema);
 
 export default Category
