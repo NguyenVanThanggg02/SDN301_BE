@@ -5,6 +5,7 @@ import imageDAO from './images.js'
 import productDAO from './product.js'
 import userDAO from './user.js'
 import sizeRepo from './size.js'
+import imageRepo from './images.js'
 
 
 
@@ -14,6 +15,7 @@ export {
     commentDAO,
     imageDAO,
     cateDAO,
-    sizeRepo
+    sizeRepo,
+    imageRepo
 }
 

@@ -5,10 +5,12 @@ const imageRouter = express.Router();
 
 //get all images
 imageRouter.get('/', imageController.getAllImages);
+//get image by productid
+imageRouter.get('/:pid', imageController.getImagesByProductId);
 
 
 //get image
-imageRouter.get('/:id', imageController.getImageById);
+// imageRouter.get('/:id', imageController.getImageById);
 //POSR :/images
 imageRouter.post('/', imageController.createImage);
 

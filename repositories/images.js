@@ -33,6 +33,19 @@ const fetchAllImageById = async (id) => {
     }
 }
 
+
+//Get image by product id
+const findByProductId = async (productId) => {
+    try {
+        const images = await Image.find({ productId:productId }).exec();
+        return images;
+    } catch (error) {
+        throw new Error('Error while fetching images by product ID');
+    }
+}
 export default {
-    create, fetchAll, fetchAllImageById
+    create, 
+    fetchAll, 
+    fetchAllImageById,
+    findByProductId
 }
