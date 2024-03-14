@@ -49,6 +49,16 @@ const getUserByUsername = async (req, res) => {
     });
   }
 };
+const fetchUserById = async (req, res) => {
+  try {
+    const userId = await userDAO.getUserById(req.params.id); 
+    res.status(200).json(userId);
+  } catch (error) {
+    res.status(500).json({
+      error: error.toString(),
+    });
+  }
+};
 
 // Create a new product
 const createUser = async (req, res) => {
@@ -87,8 +97,9 @@ const deleteUser = async (req, res) => {
 export default {
   getAllUsers,
   getUserByUsername,
+  fetchUserById,
   createUser,
   loginUser,
   updateUser,
-  deleteUser,
+  deleteUser
 };

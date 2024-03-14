@@ -29,12 +29,12 @@ const createImage = async (req, res) => {
 // Fetch all products by id
 const getImagesByProductId = async (req, res) => {
     try {
-        const { pid } = req.params
+        // const { pid } = req.params
         console.log("PID:", req.params.pid);
 
-        const images = await imageRepo.findByProductId(pid);
+        const images = await imageRepo.findByProductId(req.params.pid);
 
-        res.status(201).json(images);
+        res.status(200).json(images);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }

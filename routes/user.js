@@ -9,6 +9,7 @@ userRouter.get('/listUser', userController.getAllUsers);
 
 //get user
 userRouter.get('/:username', userController.getUserByUsername);
+userRouter.get('/:id', userController.fetchUserById);
 //POSR :/users
 userRouter.post('/register', userController.createUser);
 userRouter.post('/login', userController.loginUser);

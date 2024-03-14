@@ -1,6 +1,8 @@
 import mongoose, { Schema } from "mongoose";
 import { commentSchema } from "./comments.js";
 import { imageSchema } from "./images.js";
+import { sizeSchema } from "./size.js";
+
 
 
 const productSchema = new Schema({
@@ -33,7 +35,7 @@ const productSchema = new Schema({
     },
     color:{
         type: Schema.Types.ObjectId,
-      ref: "color",
+      ref: "colors",
       require: true,
     },
     description: {
@@ -41,6 +43,7 @@ const productSchema = new Schema({
     },
     images: [imageSchema],
     comments: [commentSchema],
+    sizes: [sizeSchema],
 }, {
     timestamps: true
 });

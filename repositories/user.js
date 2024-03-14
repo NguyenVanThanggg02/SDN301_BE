@@ -17,16 +17,9 @@ const fetchAll = async () => {
   }
 };
 
-//R:Fetch all  new Product by Id
 
-// const fetchAllProductById = async (id) => {
-//     try {
-//         const allProducts = await Products.find({ _id: id }).exec();
-//         return allProducts.map(product => product._doc);
-//     } catch (error) {
-//         throw new Error(error.toString());
-//     }
-// }
+
+
 const getUserByUsername = async (username) => {
   try {
     return await Users.findOne({ username: username }).exec();
@@ -34,6 +27,17 @@ const getUserByUsername = async (username) => {
     throw new Error(error.toString());
   }
 };
+
+const getUserById = async (id) => { 
+  try { 
+    return await Users.findOne({ _id: id }).exec();
+
+  } catch (error) { 
+      throw new Error(error.toString()); 
+  } 
+} 
+
+
 const updateUser = async (
   id,
   { full_name, username, Email, password, gender, birthday, phone, address }
@@ -72,4 +76,5 @@ export default {
   getUserByUsername,
   updateUser,
   deleteUser,
+  getUserById
 };

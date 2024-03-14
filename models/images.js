@@ -20,7 +20,7 @@ const imageSchema = new Schema({
 });
 
 // Tạo model từ schema
-const Image = mongoose.model('image', imageSchema);
+const Image = mongoose.model('images', imageSchema);
 
 export default Image
 export { imageSchema };
