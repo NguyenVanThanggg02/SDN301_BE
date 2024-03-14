@@ -34,7 +34,7 @@ const getImagesByProductId = async (req, res) => {
 
         const images = await imageRepo.findByProductId(pid);
 
-        res.status(201).json(images);
+        res.status(200).json(images);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
