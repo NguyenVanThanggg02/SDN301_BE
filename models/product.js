@@ -39,7 +39,11 @@ const productSchema = new Schema({
     description: {
         type: String,
     },
-    images: [imageSchema],
+    images: {
+        type: Schema.Types.ObjectId,
+      ref: "images",
+      require: true,
+    },
     comments: [commentSchema],
 }, {
     timestamps: true
