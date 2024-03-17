@@ -22,6 +22,7 @@ app.use('/users', userRouter)
 app.use('/comments', commentRouter)
 app.use('/sizes', sizeRouter)
 app.use('/images', imageRouter)
+app.use('/brands', brandRouter)
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");

@@ -1,0 +1,28 @@
+[
+  {
+    "full_name":"Nguyen Van Thang",
+    "username": "ThangNV",
+    "Email": "thang@gmail.com",
+    "password": "12345",
+    "gender": "Male",
+    "birthday": "2002-12-10T00:00:00.000Z",
+    "phone": 1234567890,
+    "address": "Soc Son, Ha Noi",
+    "role": 1,
+    "createdAt": "2022-03-04T12:00:00.000Z",
+    "updatedAt": "2022-03-04T12:30:00.000Z"
+  },
+  {
+    "full_name":"Doan Hai My",
+    "username": "haimy",
+    "Email": "haimy@gmail.com",
+    "password": "1234",
+    "gender": "Female",
+    "birthday": "2002-03-02T00:00:00.000Z",
+    "phone": 9876543210,
+    "address": "Hoa Lac, Ha Noi",
+    "role": 0,
+    "createdAt": "2022-03-04T14:00:00.000Z",
+    "updatedAt": "2022-03-04T14:15:00.000Z"
+  }
+]
