@@ -1,40 +1,28 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose from "mongoose";
 
 const orderDetailSchema = new mongoose.Schema(
   {
     order: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "order",
+      ref: "orders",
       required: true,
-      unique: true,
     },
     product: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Product",
+      ref: "products",
       required: true,
     },
     quantity: {
       type: Number,
       required: true,
     },
-    fullName: {
-      type: String,
-      required: true,
-    },
-    email: {
-      type: String,
-      required: true,
-    },
-    address: {
-      type: String,
-      required: true,
-    },
-    phone: {
+    price: {
       type: Number,
       required: true,
     },
-    note: {
-      type: String,
+    total_cost: {
+      type: Number,
+      required: true,
     },
   },
   {
@@ -42,6 +30,6 @@ const orderDetailSchema = new mongoose.Schema(
   }
 );
 
-const orderDetail = mongoose.model("orderDetail", orderDetailSchema);
+const OrderDetail = mongoose.model("orderDetails", orderDetailSchema);
 
-export default orderDetail;
+export default OrderDetail;

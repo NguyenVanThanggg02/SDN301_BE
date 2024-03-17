@@ -1,4 +1,4 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose from "mongoose";
 
 const revenueSchema = new mongoose.Schema({
   productId: {
@@ -19,6 +19,6 @@ const revenueSchema = new mongoose.Schema({
   }
 });
 
-const Revenue = mongoose.model('Revenue', revenueSchema);
+const Revenue = mongoose.model('revenue', revenueSchema);
 
 export default Revenue;

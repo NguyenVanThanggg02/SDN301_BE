@@ -1,4 +1,4 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose from "mongoose";
 
 const sizechema = new mongoose.Schema({
   productId: {
@@ -20,6 +20,6 @@ const sizechema = new mongoose.Schema({
   ]
 });
 
-const Size = mongoose.model('Size', sizechema);
+const Size = mongoose.model('sizes', sizechema);
 
 export default  Size;

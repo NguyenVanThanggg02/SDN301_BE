@@ -15,7 +15,8 @@ const commentSchema = new Schema({
 });
 
 // Tạo model từ schema
-const Comment = mongoose.model('comment', commentSchema);
+const Comment = mongoose.model('comments', commentSchema);
 
 export default Comment
-export {commentSchema};
+export { commentSchema };
+
