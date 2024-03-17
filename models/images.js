@@ -13,7 +13,7 @@ const imageSchema = new Schema({
     },
     productId: {
         type: Schema.Types.ObjectId,
-        ref: 'products', // 'Product' là tên của model sản phẩm
+        ref: 'products',
     }
 }, {
     timestamps: true

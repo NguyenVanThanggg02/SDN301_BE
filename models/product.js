@@ -13,11 +13,11 @@ const productSchema = new Schema({
         type: Number,
         required: true
     },
-    size: {
+    size: [{
         type: Schema.Types.ObjectId,
         ref: "sizes",
         require: true,
-    },
+    }],
     quantity: {
         type: Number,
         required: true
