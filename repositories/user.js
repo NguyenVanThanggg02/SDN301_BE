@@ -17,45 +17,36 @@ const fetchAll = async () => {
   }
 };
 
-//R:Fetch all  new Product by Id
 
-// const fetchAllProductById = async (id) => {
-//     try {
-//         const allProducts = await Products.find({ _id: id }).exec();
-//         return allProducts.map(product => product._doc);
-//     } catch (error) {
-//         throw new Error(error.toString());
-//     }
-// }
+
+
 const getUserByUsername = async (username) => {
-  console.log(username);
   try {
     return await Users.findOne({ username: username }).exec();
   } catch (error) {
     throw new Error(error.toString());
   }
 };
-const updateUser = async (
-  id,
-  { full_name, username, Email, password, gender, birthday, phone, address }
-) => {
+
+const getUserById = async (id) => {
   try {
-    return await Users.findByIdAndUpdate(
-      { _id: id },
-      {
-        full_name,
-        username,
-        Email,
-        password,
-        gender,
-        birthday,
-        phone,
-        address,
-      },
+    return await Users.findOne({ _id: id }).exec();
+
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+}
+
+
+const updateUser = async (username, userData) => {
+  try {
+    return await Users.findOneAndUpdate(
+      { username: username },
+      userData,
       { new: true }
     );
   } catch (error) {
-    throw new Error(error.toSring());
+    throw new Error(error.toString());
   }
 };
 const deleteUser = async (id) => {
@@ -73,4 +64,5 @@ export default {
   getUserByUsername,
   updateUser,
   deleteUser,
+  getUserById
 };

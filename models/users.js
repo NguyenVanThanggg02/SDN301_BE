@@ -1,10 +1,10 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
   {
     full_name: {
       type: String,
-      default: "" 
+      default: ""
 
     },
     username: {
@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema(
     },
     Email: {
       type: String,
-      default: "" 
+      default: ""
 
     },
     password: {
@@ -27,15 +27,15 @@ const userSchema = new mongoose.Schema(
     },
     birthday: {
       type: Date,
-      default: null 
+      default: null
     },
     phone: {
-      type: Number,
-      default: "" 
+      type: String,
+      default: ""
     },
     address: {
       type: String,
-      default: "" 
+      default: ""
     },
     role: {
       type: Number,

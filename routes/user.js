@@ -9,10 +9,11 @@ userRouter.get('/listUser', userController.getAllUsers);
 
 //get user
 userRouter.get('/:username', userController.getUserByUsername);
+userRouter.get('/:id', userController.fetchUserById);
 //POSR :/users
 userRouter.post('/register', userController.createUser);
 userRouter.post('/login', userController.loginUser);
-userRouter.put("/:id", userController.updateUser);
+userRouter.put("/:username", userController.updateUser);
 userRouter.delete("/:id", userController.deleteUser);
 
 

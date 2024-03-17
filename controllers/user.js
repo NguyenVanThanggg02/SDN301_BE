@@ -4,6 +4,7 @@ import { userDAO } from "../repositories/index.js";
 
 const loginUser = async (req, res) => {
   const { username, password } = req.body;
+
   try {
     // Lấy người dùng từ cơ sở dữ liệu dựa trên tên người dùng
     const user = await userDAO.getUserByUsername(username);
@@ -48,6 +49,16 @@ const getUserByUsername = async (req, res) => {
     });
   }
 };
+const fetchUserById = async (req, res) => {
+  try {
+    const userId = await userDAO.getUserById(req.params.id); 
+    res.status(200).json(userId);
+  } catch (error) {
+    res.status(500).json({
+      error: error.toString(),
+    });
+  }
+};
 
 // Create a new product
 const createUser = async (req, res) => {
@@ -65,7 +76,7 @@ const createUser = async (req, res) => {
 
 const updateUser = async (req, res) => {
   try {
-    res.status(200).json(await userDAO.updateUser(req.params.id, req.body));
+    res.status(200).json(await userDAO.updateUser(req.params.username, req.body));
   } catch (error) {
     res.status(500).json({
       error: error.toString(),
@@ -86,8 +97,9 @@ const deleteUser = async (req, res) => {
 export default {
   getAllUsers,
   getUserByUsername,
+  fetchUserById,
   createUser,
   loginUser,
   updateUser,
-  deleteUser,
+  deleteUser
 };

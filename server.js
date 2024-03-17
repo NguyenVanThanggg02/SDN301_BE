@@ -4,7 +4,7 @@ import * as dotenv from 'dotenv';
 import express, { json } from "express";
 
 import connectDB from "./database.js";
-import { commentRouter, imageRouter, inventoryRouter, productRouter, sizeRouter, userRouter } from "./routes/index.js";
+import { brandRouter, commentRouter, imageRouter, inventoryRouter, productRouter, sizeRouter, userRouter } from "./routes/index.js";
 dotenv.config();
 //Tạo 1 constant 'app'
 const app = express();
@@ -24,7 +24,7 @@ app.use('/sizes', sizeRouter)
 app.use('/images', imageRouter)
 app.use('/inventory', inventoryRouter)
 
-// app.use('/brands', brandRouter)
+app.use('/brands', brandRouter)
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
