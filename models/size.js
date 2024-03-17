@@ -1,10 +1,9 @@
 import mongoose, { Schema } from "mongoose";
 
-const sizechema = new mongoose.Schema({
+const sizeSchema = new mongoose.Schema({
   productId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Product',
-    required: true
+    ref: 'products'
   },
   sizes: [
     {
@@ -20,6 +19,7 @@ const sizechema = new mongoose.Schema({
   ]
 });
 
-const Size = mongoose.model('Size', sizechema);
+const Size = mongoose.model('sizes', sizeSchema);
 
 export default  Size;
+export { sizeSchema };

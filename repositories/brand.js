@@ -7,8 +7,19 @@ const fetchAll = async () => {
       throw new Error(error.toString());
     }
   };
+
+
+  const getBrandByProductId = async (id) => {
+    try {
+      const brandById = await Brand.findOne({ productId: id }).exec();
+      return brandById;
+    } catch (error) {
+      throw new Error(error.toString()); 
+      
+    }
+  }
   
 
   export default {
-    fetchAll
+    fetchAll,getBrandByProductId
   }
