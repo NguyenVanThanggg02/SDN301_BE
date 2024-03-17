@@ -52,3 +52,5 @@ const productSchema = new Schema({
 const Product = mongoose.model('products', productSchema);
 
 export default Product;
+
+//toandeptraiii
