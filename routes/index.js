@@ -1,11 +1,12 @@
+import brandRouter from './brand.js'
 import cateRouter from './categories.js'
+import colorRouter from './color.js'
 import commentRouter from './comments.js'
 import imageRouter from './images.js'
+import inventoryRouter from './inventory.js'
 import productRouter from './product.js'
-import userRouter from './user.js'
-import brandRouter from './brand.js'
-import colorRouter from './color.js'
 import sizeRouter from './size.js'
+import userRouter from './user.js'
 
 export {
     productRouter,
@@ -15,6 +16,7 @@ export {
     cateRouter,
     brandRouter,
     colorRouter,
-    sizeRouter
+    sizeRouter,
+    inventoryRouter
 }
 

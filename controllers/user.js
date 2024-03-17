@@ -4,7 +4,6 @@ import { userDAO } from "../repositories/index.js";
 
 const loginUser = async (req, res) => {
   const { username, password } = req.body;
-
   try {
     // Lấy người dùng từ cơ sở dữ liệu dựa trên tên người dùng
     const user = await userDAO.getUserByUsername(username);

@@ -28,6 +28,7 @@ const fetchAll = async () => {
 //     }
 // }
 const getUserByUsername = async (username) => {
+  console.log(username);
   try {
     return await Users.findOne({ username: username }).exec();
   } catch (error) {

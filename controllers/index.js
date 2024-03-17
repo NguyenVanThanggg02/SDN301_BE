@@ -9,6 +9,7 @@ import sizeController from './size.js'
 import userController from './user.js'
 
 
+export * from './inventory.js'
 export * from './order.js'
 export {
     productController,
@@ -21,4 +22,5 @@ export {
     sizeController,
 
 }
+
 
