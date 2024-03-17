@@ -1,21 +1,21 @@
-
 import cateDAO from './categories.js'
 import commentDAO from './comments.js'
-import imageDAO from './images.js'
+import imageRepo from './images.js'
 import productDAO from './product.js'
 import userDAO from './user.js'
+import brandDAO from './brand.js'
+import colorDAO from './color.js'
 import sizeRepo from './size.js'
-import imageRepo from './images.js'
-
 
 
 export {
     productDAO,
     userDAO,
     commentDAO,
-    imageDAO,
+    imageRepo,
     cateDAO,
-    sizeRepo,
-    imageRepo
+    brandDAO,
+    colorDAO,
+    sizeRepo
 }
 

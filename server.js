@@ -4,7 +4,7 @@ import * as dotenv from 'dotenv';
 import express, { json } from "express";
 
 import connectDB from "./database.js";
-import { cateRouter, commentRouter, imageRouter, productRouter, userRouter,sizeRouter } from "./routes/index.js";
+import { cateRouter, commentRouter, imageRouter, productRouter, userRouter,sizeRouter,brandRouter,colorRouter } from "./routes/index.js";
 dotenv.config();
 //Tạo 1 constant 'app'
 const app = express();

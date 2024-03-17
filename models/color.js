@@ -1,21 +1,22 @@
 import mongoose, { Schema } from "mongoose";
 
-const colorSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true
+const colorSchema = new mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+    },
+    code: {
+      type: String,
+      required: true,
+      unique: true,
+    },
   },
-  code: {
-    type: String,
-    required: true,
-    unique: true
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now
+  {
+    timestamps: true,
   }
-});
+);
 
-const Color = mongoose.model('Color', colorSchema);
+const Color = mongoose.model("color", colorSchema);
 
-export default  Color;
+export default Color;
