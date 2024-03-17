@@ -19,10 +19,8 @@ app.get('/', (req, res) => {
 
 app.use('/products', productRouter)
 app.use('/users', userRouter)
-app.use('/category', cateRouter)
-app.use('/image', imageRouter)
-app.use('/comment', commentRouter)
-app.use('/size', sizeRouter)
+app.use('/comments', commentRouter)
+app.use('/sizes', sizeRouter)
 app.use('/images', imageRouter)
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
