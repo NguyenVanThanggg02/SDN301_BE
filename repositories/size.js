@@ -1,7 +1,7 @@
 import Size from '../models/size.js';
 
 // get Size
-const getAllSize = async (username) => {
+const fetchAllSize = async () => {
     try {
         const size = await Size.find({}).exec();
         return size;
@@ -10,6 +10,16 @@ const getAllSize = async (username) => {
     }
 }
 
+const findSizeByProductId = async (productId) => {
+    try {
+        const sizes = await Size.find({ productId:productId }).exec();
+        return sizes;
+    } catch (error) {
+        throw new Error('Error while fetching images by product ID');
+    }
+}
+
 export default {
-    getAllSize
+    fetchAllSize,
+    findSizeByProductId
 };

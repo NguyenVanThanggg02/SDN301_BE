@@ -15,8 +15,8 @@ const productSchema = new Schema({
     },
     size: {
         type: Schema.Types.ObjectId,
-      ref: "sizes",
-      require: true,
+        ref: "sizes",
+        require: true,
     },
     quantity: {
         type: Number,
@@ -31,19 +31,19 @@ const productSchema = new Schema({
         ref: "brands",
         require: true,
     },
-    color:{
+    color: {
         type: Schema.Types.ObjectId,
-      ref: "color",
-      require: true,
+        ref: "color",
+        require: true,
     },
     description: {
         type: String,
     },
-    images: {
+    images: [{
         type: Schema.Types.ObjectId,
-      ref: "images",
-      require: true,
-    },
+        ref: "images",
+        require: true,
+    }],
     comments: [commentSchema],
 }, {
     timestamps: true
