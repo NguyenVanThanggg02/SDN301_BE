@@ -38,27 +38,15 @@ const getUserById = async (id) => {
 } 
 
 
-const updateUser = async (
-  id,
-  { full_name, username, Email, password, gender, birthday, phone, address }
-) => {
+const updateUser = async (username, userData) => {
   try {
-    return await Users.findByIdAndUpdate(
-      { _id: id },
-      {
-        full_name,
-        username,
-        Email,
-        password,
-        gender,
-        birthday,
-        phone,
-        address,
-      },
+    return await Users.findOneAndUpdate(
+      { username: username },
+      userData,
       { new: true }
     );
   } catch (error) {
-    throw new Error(error.toSring());
+    throw new Error(error.toString());
   }
 };
 const deleteUser = async (id) => {
