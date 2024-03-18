@@ -31,7 +31,6 @@ const addComment = async ({ userId, text, productId }) => {
   }
 };
 
-
 const deleteCommentsById = async (id) => {
   try {
     const deleteComment = await Comment.deleteOne({ _id: id });
@@ -43,20 +42,20 @@ const deleteCommentsById = async (id) => {
 
 const editComment = async (id, newText) => {
   try {
-    const updatedComment = await Comment.findOneAndUpdate({_id:id},  newText , { new: true });
+    const updatedComment = await Comment.findOneAndUpdate(
+      { _id: id },
+      newText,
+      { new: true }
+    );
     return updatedComment;
   } catch (error) {
     throw new Error(error.toString());
   }
 };
 
-
-
-
-
 export default {
   fetchAllById,
   addComment,
   deleteCommentsById,
-  editComment
-}
+  editComment,
+};
