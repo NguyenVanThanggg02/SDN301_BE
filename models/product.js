@@ -1,6 +1,5 @@
 import mongoose, { Schema } from "mongoose";
 import { commentSchema } from "./comments.js";
-import { imageSchema } from "./images.js";
 
 
 const productSchema = new Schema({

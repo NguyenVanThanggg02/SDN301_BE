@@ -11,6 +11,8 @@ import userController from './user.js'
 
 export * from './inventory.js'
 export * from './order.js'
+export * from './orderDetail.js'
+export * from './receipt.js'
 export {
     productController,
     userController,

@@ -1,25 +1,12 @@
 import mongoose from "mongoose";
 
 const sizechema = new mongoose.Schema({
-  productId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Product',
+  size: {
+    type: Number,
     required: true
-  },
-  sizes: [
-    {
-      size: {
-        type: Number,
-        required: true
-      },
-      quantity: {
-        type: Number,
-        required: true
-      }
-    }
-  ]
+  }
 });
 
 const Size = mongoose.model('sizes', sizechema);
 
-export default  Size;
+export default Size;

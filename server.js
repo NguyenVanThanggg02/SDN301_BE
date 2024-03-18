@@ -5,6 +5,9 @@ import express, { json } from "express";
 
 import connectDB from "./database.js";
 import { brandRouter, commentRouter, imageRouter, inventoryRouter, productRouter, sizeRouter, userRouter } from "./routes/index.js";
+import orderRouter from "./routes/order.js";
+import orderDetailRouter from "./routes/orderDetail.js";
+import receiptRouter from "./routes/receipt.js";
 dotenv.config();
 //Tạo 1 constant 'app'
 const app = express();
@@ -23,8 +26,11 @@ app.use('/comments', commentRouter)
 app.use('/sizes', sizeRouter)
 app.use('/images', imageRouter)
 app.use('/inventory', inventoryRouter)
-
+app.use('/order', orderRouter)
+app.use('/order_detail', orderDetailRouter)
 app.use('/brands', brandRouter)
+app.use('/receipt', receiptRouter)
+
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");

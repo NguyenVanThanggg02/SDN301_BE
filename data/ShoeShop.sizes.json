@@ -2,299 +2,59 @@
   "_id": {
     "$oid": "65f619c9424aad40883dfeae"
   },
-  "productId": {
-    "$oid": "65ef8fbc3779abc309eaa946"
-  },
-  "sizes": [
-    {
-      "size": 38,
-      "quantity": 50
-    },
-    {
-      "size": 39,
-      "quantity": 50
-    },
-    {
-      "size": 40,
-      "quantity": 50
-    },
-    {
-      "size": 41,
-      "quantity": 45
-    },
-    {
-      "size": 42,
-      "quantity": 40
-    },
-    {
-      "size": 43,
-      "quantity": 35
-    }
-  ]
+  "size": 38
 },
 {
   "_id": {
     "$oid": "65f619c9424aad40883dfeaf"
   },
-  "productId": {
-    "$oid": "65ef8fbc3779abc309eaa947"
-  },
-  "sizes": [
-    {
-      "size": 38,
-      "quantity": 40
-    },
-    {
-      "size": 39,
-      "quantity": 40
-    },
-    {
-      "size": 40,
-      "quantity": 40
-    },
-    {
-      "size": 41,
-      "quantity": 35
-    },
-    {
-      "size": 42,
-      "quantity": 30
-    },
-    {
-      "size": 43,
-      "quantity": 25
-    },
-    {
-      "size": 44,
-      "quantity": 20
-    }
-  ]
+  "size": 39
 },
 {
   "_id": {
     "$oid": "65f619c9424aad40883dfeb0"
   },
-  "productId": {
-    "$oid": "65ef8fbc3779abc309eaa948"
-  },
-  "sizes": [
-    {
-      "size": 38,
-      "quantity": 25
-    },
-    {
-      "size": 39,
-      "quantity": 25
-    },
-    {
-      "size": 40,
-      "quantity": 25
-    },
-    {
-      "size": 41,
-      "quantity": 20
-    },
-    {
-      "size": 42,
-      "quantity": 15
-    }
-  ]
+  "size": 40
 },
 {
   "_id": {
     "$oid": "65f619c9424aad40883dfeb1"
   },
-  "productId": {
-    "$oid": "65ef8fbc3779abc309eaa949"
-  },
-  "sizes": [
-    {
-      "size": 38,
-      "quantity": 40
-    },
-    {
-      "size": 39,
-      "quantity": 40
-    },
-    {
-      "size": 40,
-      "quantity": 35
-    },
-    {
-      "size": 41,
-      "quantity": 30
-    }
-  ]
+  "size": 41
 },
 {
   "_id": {
     "$oid": "65f619c9424aad40883dfeb2"
   },
-  "productId": {
-    "$oid": "65ef8fbc3779abc309eaa94a"
-  },
-  "sizes": [
-    {
-      "size": 38,
-      "quantity": 35
-    },
-    {
-      "size": 39,
-      "quantity": 30
-    },
-    {
-      "size": 40,
-      "quantity": 25
-    },
-    {
-      "size": 41,
-      "quantity": 20
-    },
-    {
-      "size": 42,
-      "quantity": 15
-    }
-  ]
+  "size": 42
 },
 {
   "_id": {
     "$oid": "65f619c9424aad40883dfeb3"
   },
-  "productId": {
-    "$oid": "65ef8fbc3779abc309eaa94b"
-  },
-  "sizes": [
-    {
-      "size": 38,
-      "quantity": 45
-    },
-    {
-      "size": 39,
-      "quantity": 35
-    },
-    {
-      "size": 40,
-      "quantity": 30
-    },
-    {
-      "size": 41,
-      "quantity": 25
-    }
-  ]
+  "size": 43
 },
 {
   "_id": {
     "$oid": "65f619c9424aad40883dfeb4"
   },
-  "productId": {
-    "$oid": "65ef8fbc3779abc309eaa94c"
-  },
-  "sizes": [
-    {
-      "size": 38,
-      "quantity": 25
-    },
-    {
-      "size": 39,
-      "quantity": 25
-    },
-    {
-      "size": 40,
-      "quantity": 25
-    },
-    {
-      "size": 41,
-      "quantity": 20
-    },
-    {
-      "size": 42,
-      "quantity": 15
-    }
-  ]
+  "size": 44
 },
 {
   "_id": {
     "$oid": "65f619c9424aad40883dfeb5"
   },
-  "productId": {
-    "$oid": "65ef8fbc3779abc309eaa94d"
-  },
-  "sizes": [
-    {
-      "size": 38,
-      "quantity": 20
-    },
-    {
-      "size": 39,
-      "quantity": 35
-    },
-    {
-      "size": 40,
-      "quantity": 40
-    },
-    {
-      "size": 41,
-      "quantity": 45
-    }
-  ]
+  "size": 37
 },
 {
   "_id": {
     "$oid": "65f619c9424aad40883dfeb6"
   },
-  "productId": {
-    "$oid": "65ef8fbc3779abc309eaa94e"
-  },
-  "sizes": [
-    {
-      "size": 38,
-      "quantity": 30
-    },
-    {
-      "size": 39,
-      "quantity": 25
-    },
-    {
-      "size": 40,
-      "quantity": 30
-    },
-    {
-      "size": 41,
-      "quantity": 25
-    },
-    {
-      "size": 42,
-      "quantity": 20
-    }
-  ]
+  "size": 36
 },
 {
   "_id": {
     "$oid": "65f619c9424aad40883dfeb7"
   },
-  "productId": {
-    "$oid": "65ef8fbc3779abc309eaa94f"
-  },
-  "sizes": [
-    {
-      "size": 38,
-      "quantity": 25
-    },
-    {
-      "size": 39,
-      "quantity": 20
-    },
-    {
-      "size": 40,
-      "quantity": 25
-    },
-    {
-      "size": 41,
-      "quantity": 20
-    },
-    {
-      "size": 42,
-      "quantity": 15
-    }
-  ]
+  "size": 35
 }]

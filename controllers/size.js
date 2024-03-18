@@ -1,10 +1,10 @@
-import {sizeRepo} from '../repositories/index.js'
+import { sizeRepo } from '../repositories/index.js';
 
 //get User by ID
 const fetchAllSize = async (req, res) => {
     try {
         const allSize = await sizeRepo.fetchAllSize();
-        res.status(200).json(allSize);
+        res.status(200).json({ data: allSize, mess: "Get list sizes successfully!", success: true });
     } catch (error) {
         res.status(500).json({
             error: error.toString()
