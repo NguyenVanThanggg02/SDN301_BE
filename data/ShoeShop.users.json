@@ -1,0 +1,63 @@
+[{
+  "_id": {
+    "$oid": "65ee7e9b10c14c775efc8026"
+  },
+  "full_name": "Nguyen Van Thang",
+  "username": "ThangNV",
+  "Email": "thang@gmail.coment",
+  "password": "12345",
+  "gender": "Male",
+  "birthday": {
+    "$date": "2002-12-10T00:00:00.000Z"
+  },
+  "phone": "0368286888",
+  "address": "Sóc Sơn - Hà Nội",
+  "role": 1,
+  "createdAt": "2022-03-04T12:00:00.000Z",
+  "updatedAt": {
+    "$date": "2024-03-17T19:35:27.036Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65ee7e9b10c14c775efc8027"
+  },
+  "full_name": "Doan Hai My",
+  "username": "haimy",
+  "Email": "haimy@gmail.com",
+  "password": "123",
+  "gender": "Female",
+  "birthday": {
+    "$date": "2002-03-02T00:00:00.000Z"
+  },
+  "phone": "0123456789",
+  "address": "Hoa Lac, Ha Noi",
+  "role": 0,
+  "createdAt": "2022-03-04T14:00:00.000Z",
+  "updatedAt": {
+    "$date": "2024-03-17T19:09:12.482Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65ef2ac180fb361cb0ca7aa8"
+  },
+  "full_name": "Thang Dep Trai",
+  "username": "vannam",
+  "Email": "toan@gmail",
+  "password": "12345",
+  "gender": "Male",
+  "birthday": {
+    "$date": "2002-02-01T17:00:00.000Z"
+  },
+  "phone": "113",
+  "address": "Hoa Lac City",
+  "role": 0,
+  "createdAt": {
+    "$date": "2024-03-11T16:01:05.214Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-17T16:01:41.771Z"
+  },
+  "__v": 0
+}]

@@ -16,7 +16,7 @@ const create = async ({ name, price, size, quantity, total_cost, brand, descript
 
 const fetchAll = async () => {
     try {
-        return await Product.find({}).populate("images").exec();
+        return await Product.find({}).populate("images").populate("comments").exec();
     } catch (error) {
         throw new Error(error.toString());
     }
@@ -26,7 +26,7 @@ const fetchAll = async () => {
 
 const fetchAllProductById = async (id) => {
     try {
-        const allProducts = await Product.findOne({ _id: id }).populate("images").exec();
+        const allProducts = await Product.findOne({ _id: id }).populate("images").populate("comments").exec();
         return allProducts._doc;
     } catch (error) {
         throw new Error(error.toString());

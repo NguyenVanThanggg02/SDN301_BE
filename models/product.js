@@ -44,7 +44,11 @@ const productSchema = new Schema({
         ref: "images",
         require: true,
     }],
-    comments: [commentSchema],
+    comments: [{
+        type: Schema.Types.ObjectId,
+        ref: "comments",
+        require: true,
+    }]
 }, {
     timestamps: true
 });
@@ -52,4 +56,3 @@ const productSchema = new Schema({
 const Product = mongoose.model('products', productSchema);
 
 export default Product;
-

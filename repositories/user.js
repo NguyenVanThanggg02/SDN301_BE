@@ -17,9 +17,6 @@ const fetchAll = async () => {
   }
 };
 
-
-
-
 const getUserByUsername = async (username) => {
   try {
     return await Users.findOne({ username: username }).exec();
@@ -28,23 +25,19 @@ const getUserByUsername = async (username) => {
   }
 };
 
-const getUserById = async (id) => { 
-  try { 
+const getUserById = async (id) => {
+  try {
     return await Users.findOne({ _id: id }).exec();
-
-  } catch (error) { 
-      throw new Error(error.toString()); 
-  } 
-} 
-
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
 
 const updateUser = async (username, userData) => {
   try {
-    return await Users.findOneAndUpdate(
-      { username: username },
-      userData,
-      { new: true }
-    );
+    return await Users.findOneAndUpdate({ username: username }, userData, {
+      new: true,
+    });
   } catch (error) {
     throw new Error(error.toString());
   }
@@ -64,5 +57,5 @@ export default {
   getUserByUsername,
   updateUser,
   deleteUser,
-  getUserById
+  getUserById,
 };

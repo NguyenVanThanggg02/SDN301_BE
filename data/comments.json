@@ -1,0 +1,23 @@
+[
+  {
+    "text": "This is a comment of products.",
+    "userId": {
+      "$oid": "65ee7e9b10c14c775efc8026"
+    },
+    "productId": { "$oid": "65ef8fbc3779abc309eaa946" }
+  },
+  {
+    "text": "This is a comment on the video 1111.",
+    "userId":  {
+      "$oid": "65ee7e9b10c14c775efc8027"
+    },
+    "productId": { "$oid": "65ef8fbc3779abc309eaa946" }
+  },
+  {
+    "text": "This is a comment on the video 2222222.",
+    "userId": {
+      "$oid": "65ef2ac180fb361cb0ca7aa8"
+    },
+    "productId": { "$oid": "65ef8fbc3779abc309eaa946" }
+  }
+]

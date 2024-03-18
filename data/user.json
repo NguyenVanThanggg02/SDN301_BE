@@ -1,28 +1,28 @@
 [
-    {
-      "FullName": "John Doe",
-      "userName": "johndoe123",
-      "Email": "johndoe@example.com",
-      "Password": "password123",
-      "Gender": "Male",
-      "Dob": "1990-01-01",
-      "Phone": 1234567890,
-      "Address": "123 Main St, Anytown, USA",
-      "Role": "Admin",
-      "createdAt": "2024-03-06T08:00:00.000Z",
-      "updatedAt": "2024-03-06T08:00:00.000Z"
-    },
-    {
-      "FullName": "Jane Smith",
-      "userName": "janesmith456",
-      "Email": "janesmith@example.com",
-      "Password": "password456",
-      "Gender": "Female",
-      "Dob": "1995-05-15",
-      "Phone": 9876543210,
-      "Address": "456 Elm St, Othertown, USA",
-      "Role": "User",
-      "createdAt": "2024-03-06T08:00:00.000Z",
-      "updatedAt": "2024-03-06T08:00:00.000Z"
-    }
-  ]
+  {
+    "full_name":"Nguyen Van Thang",
+    "username": "ThangNV",
+    "Email": "thang@gmail.com",
+    "password": "12345",
+    "gender": "Male",
+    "birthday": "2002-12-10T00:00:00.000Z",
+    "phone": "1234567890",
+    "address": "Soc Son, Ha Noi",
+    "role": 1,
+    "createdAt": "2022-03-04T12:00:00.000Z",
+    "updatedAt": "2022-03-04T12:30:00.000Z"
+  },
+  {
+    "full_name":"Doan Hai My",
+    "username": "haimy",
+    "Email": "haimy@gmail.com",
+    "password": "1234",
+    "gender": "Female",
+    "birthday": "2002-03-02T00:00:00.000Z",
+    "phone": "9876543210",
+    "address": "Hoa Lac, Ha Noi",
+    "role": 0,
+    "createdAt": "2022-03-04T14:00:00.000Z",
+    "updatedAt": "2022-03-04T14:15:00.000Z"
+  }
+]

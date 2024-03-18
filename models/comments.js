@@ -4,18 +4,21 @@ const commentSchema = new Schema({
     text: {
         type: String,
     },
-    rate: {
-        type: Number,
+    userId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref:"users"
     },
-    author: {
-        type: String,
-    }
+    productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "products", 
+      }
 }, {
     timestamps: true
 });
 
 // Tạo model từ schema
-const Comment = mongoose.model('comment', commentSchema);
+const Comment = mongoose.model('comments', commentSchema);
 
 export default Comment
-export {commentSchema};
+export { commentSchema };
+

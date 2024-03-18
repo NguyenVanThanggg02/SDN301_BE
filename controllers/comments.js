@@ -1,69 +1,59 @@
 import { commentDAO } from "../repositories/index.js";
 // Fetch all products
-const getAllComments = async (req, res) => {
-    try {
-        const allComments = await commentDAO.fetchAll();
-        res.status(200).json(allComments);
-    } catch (error) {
-        res.status(500).json({
-            error: error.toString()
-        });
+const getAllCommentsById = async (req, res) => {
+  try {
+    const commentProductId = req.params.id;
+    console.log(req.params.id);
+    const allCommentsProducts = await commentDAO.fetchAllById(commentProductId);
+    if (allCommentsProducts) {
+      res.status(200).json(allCommentsProducts);
+    } else {
+      res.status(404).json("Not found");
     }
-}
+  } catch (error) {
+    res.status(500).json({
+      message: error.toString(),
+    });
+  }
+};
 
-// Create a new product
-const createComment = async (req, res) => {
-    // Get data from request body 
-    try {
-        const { text, rate, author, productId } = req.body;
-        const result = await commentDAO.create({ text, rate, author, productId });
-        res.status(201).json(result);
-    } catch (error) {
-        res.status(500).json({
-            error: error.toString()
-        })
+const removeCommentById = async (req, res) => {
+  try {
+    const commentId = req.params.id;
+    const deletedComments = await commentDAO.deleteCommentsById(commentId);
+    if (deletedComments) {
+      res.status(200).json({ message: "Comments deleted successfully" });
+    } else {
+      res.status(404).json({ message: "Comments not found" });
     }
+  } catch (error) {
+    res.status(500).json({ message: error.toString() });
+  }
+};
 
-}
+const addComment = async (req, res, next) => {
+  try {
+    const { userId, text, productId } = req.body;
+    const comment = await commentDAO.addComment({ userId, text, productId });
+    res.status(201).json({ message: "Comment added successfully", comment });
+  } catch (error) {
+    next(error);
+  }
+};
 
-// Fetch all products by id
-const getCommentById = async (req, res) => {
-    try {
-        const productId = req.params.id
-        const allComments = await commentDAO.fetchAllCommentById(productId);
-        if (allComments) {
-            res.status(200).json({
-                message: "Load data successfully",
-                data: allComments,
-            })
-        } else {
-            res.status(404).json('Not found')
-        }
-    } catch (error) {
-        res.status(500).json({
-            message: error.toString()
-        })
-    }
-}
-const getCommentByProductId = async (req, res) => {
-    try {
-        const productId = req.params.id
-        const allComments = await commentDAO.fetchAllCommentByProductId(productId);
-        if (allComments) {
-            res.status(200).json({
-                message: "Load data successfully",
-                data: allComments,
-            })
-        } else {
-            res.status(404).json('Not found')
-        }
-    } catch (error) {
-        res.status(500).json({
-            message: error.toString()
-        })
-    }
-}
+const updateComment = async (req, res) => {
+  try {
+    res.status(200).json(await commentDAO.editComment(req.params.id, req.body));
+  } catch (error) {
+    res.status(500).json({
+      error: error.toString(),
+    });
+  }
+};
 
 export default {
-    getAllComments, getCommentById, createComment, getCommentByProductId
-}
+  getAllCommentsById,
+  addComment,
+  removeCommentById,
+  updateComment,
+};
