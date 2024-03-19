@@ -1,46 +1,61 @@
 import Comment from "../models/comments.js";
-//Operation CRUD product
+import Product from "../models/product.js";
 
-//C:Create a new Comment
+const fetchAllById = async (id) => {
+  try {
+    const allComments = await Comment.find({ productId: id })
+      .populate("userId")
+      .exec();
+    return allComments;
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
 
-const create = async ({ text, rate, author, productId }) => {
-    try {
-        const newComment = await Comment.create({ text, rate, author, productId });
-        return newComment._doc;
-    } catch (error) {
-        throw new Error(error.toString())
+const addComment = async ({ userId, text, productId }) => {
+  try {
+    const productObjectId = new mongoose.Types.ObjectId(productId);
+    const product = await Product.findById(productObjectId)
+      .populate("comments")
+      .populate("users")
+      .exec();
+    if (!product) {
+      throw new Error(error.toString());
     }
-}
+    const comment = await Comment.create({ userId, text });
+    product.comments.push(comment);
+    await product.save();
+    return comment;
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
 
-//R:Fetch all  new Comment
+const deleteCommentsById = async (id) => {
+  try {
+    const deleteComment = await Comment.deleteOne({ _id: id });
+    return deleteComment;
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
 
-const fetchAll = async () => {
-    try {
-        return await Comment.find({}).exec();
-    } catch (error) {
-        throw new Error(error.toString());
-    }
-}
-
-//R:Fetch all  new Comment by Id
-
-const fetchAllCommentById = async (id) => {
-    try {
-        const allComments = await Comment.find({ _id: id }).exec();
-        return allComments.map(product => product._doc);
-    } catch (error) {
-        throw new Error(error.toString());
-    }
-}
-const fetchAllCommentByProductId = async (id) => {
-    try {
-        const allComments = await Comment.filter({ productId: id }).exec();
-        return allComments.map(product => product._doc);
-    } catch (error) {
-        throw new Error(error.toString());
-    }
-}
+const editComment = async (id, newText) => {
+  try {
+    const updatedComment = await Comment.findOneAndUpdate(
+      { _id: id },
+      newText,
+      { new: true }
+    );
+    return updatedComment;
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
 
 export default {
-    create, fetchAll, fetchAllCommentById, fetchAllCommentByProductId
-}
+  fetchAllById,
+  addComment,
+  deleteCommentsById,
+  editComment,
+};
