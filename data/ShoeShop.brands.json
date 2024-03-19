@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "65e8805b11203bbfd2711802"
+  },
+  "name": "Nike"
+},
+{
+  "_id": {
+    "$oid": "65e8805b11203bbfd2711803"
+  },
+  "name": "Adidas"
+},
+{
+  "_id": {
+    "$oid": "65e8805b11203bbfd2711804"
+  },
+  "name": "Puma"
+},
+{
+  "_id": {
+    "$oid": "65e8805b11203bbfd2711805"
+  },
+  "name": "New Balance"
+}]

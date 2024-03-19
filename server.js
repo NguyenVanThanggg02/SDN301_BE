@@ -5,6 +5,7 @@ import express, { json } from "express";
 
 import connectDB from "./database.js";
 import { brandRouter, commentRouter, imageRouter, inventoryRouter, productRouter, sizeRouter, userRouter } from "./routes/index.js";
+import searchRouter from "./routes/search.js";
 dotenv.config();
 //Tạo 1 constant 'app'
 const app = express();
@@ -23,6 +24,7 @@ app.use('/comments', commentRouter)
 app.use('/sizes', sizeRouter)
 app.use('/images', imageRouter)
 app.use('/inventory', inventoryRouter)
+app.use('/search', searchRouter)
 
 app.use('/brands', brandRouter)
 app.use(function (req, res, next) {

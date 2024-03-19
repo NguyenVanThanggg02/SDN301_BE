@@ -51,6 +51,23 @@ const getProductById = async (req, res) => {
     }
 }
 
+
+const removeProductById = async (req, res) => {
+    try {
+      const productId = req.params.id;
+      const deletedProduct = await productDAO.deleteProductById(productId);
+      if (deletedProduct) {
+        res.status(200).json({ message: "Product deleted successfully" });
+      } else {
+        res.status(404).json({ message: "Product not found" });
+      }
+    } catch (error) {
+      res.status(500).json({ message: error.toString() });
+    }
+  };
+
+
+
 export default {
-    getAllProducts, getProductById, createProduct
+    getAllProducts, getProductById, createProduct,removeProductById
 }

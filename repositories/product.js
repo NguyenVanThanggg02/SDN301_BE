@@ -16,7 +16,7 @@ const create = async ({ name, price, size, quantity, total_cost, brand, descript
 
 const fetchAll = async () => {
     try {
-        return await Product.find({}).populate("images").populate("comments").exec();
+        return await Product.find({}).populate("images").populate("comments").populate("size").populate("brand").exec();
     } catch (error) {
         throw new Error(error.toString());
     }
@@ -33,6 +33,18 @@ const fetchAllProductById = async (id) => {
     }
 }
 
+
+
+
+const deleteProductById = async (id) => {
+    try {
+      const deleteProduct = await Product.deleteOne({ _id: id });
+      return deleteProduct;
+    } catch (error) {
+      throw new Error(error.toString());
+    }
+  };
+
 export default {
-    create, fetchAll, fetchAllProductById
+    create, fetchAll, fetchAllProductById, deleteProductById
 }

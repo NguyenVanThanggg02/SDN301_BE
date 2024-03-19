@@ -1,372 +1,372 @@
 [
-    {
-        "_id": {
-            "$oid": "65ef8fbc3779abc309eaa946"
-        },
-        "name": "Nike Air Max 1",
-        "price": 129.99,
-        "size": "62354b5f5bad6b6d92c9d6e3",
-        "quantity": 150,
-        "total_cost": 19498.5,
-        "brand": "62354b5f5bad6b6d92c9d6e4",
-        "color": "62354b5f5bad6b6d92c9d6e5",
-        "description": "Experience the ultimate in cushioned comfort with the Nike Air Max 1. Featuring a sleek design and responsive Air Max cushioning, these shoes provide all-day comfort and style.",
-        "images": [
-            {
-                "$oid": "65f31b5c16857ee9e7304179"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730417a"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730417b"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730417c"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730417d"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730417e"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730417f"
-            }
-        ],
-        "comments": []
+  {
+    "_id": {
+      "$oid": "65ef8fbc3779abc309eaa946"
     },
-    {
-        "_id": {
-            "$oid": "65ef8fbc3779abc309eaa947"
-        },
-        "name": "Nike React Infinity Run",
-        "price": 139.99,
-        "size": "62354b5f5bad6b6d92c9d6e3",
-        "quantity": 120,
-        "total_cost": 16798.8,
-        "brand": "62354b5f5bad6b6d92c9d6e4",
-        "color": "62354b5f5bad6b6d92c9d6e5",
-        "description": "Elevate your running experience with the Nike React Infinity Run shoes. Designed to provide support and cushioning for long-distance runs, these shoes are a perfect choice for runners of all levels.",
-        "images": [
-            {
-                "$oid": "65f31b5c16857ee9e7304180"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304181"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304182"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304183"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304184"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304185"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304186"
-            }
-        ],
-        "comments": []
+    "name": "Nike Air Max 1",
+    "price": 129.99,
+    "size": { "$oid": "65f619c9424aad40883dfeae" },
+    "quantity": 150,
+    "total_cost": 19498.5,
+    "brand": { "$oid": "65e8805b11203bbfd2711802" },
+    "color": "62354b5f5bad6b6d92c9d6e5",
+    "description": "Experience the ultimate in cushioned comfort with the Nike Air Max 1. Featuring a sleek design and responsive Air Max cushioning, these shoes provide all-day comfort and style.",
+    "images": [
+      {
+        "$oid": "65f31b5c16857ee9e7304179"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730417a"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730417b"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730417c"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730417d"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730417e"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730417f"
+      }
+    ],
+    "comments": []
+  },
+  {
+    "_id": {
+      "$oid": "65ef8fbc3779abc309eaa947"
     },
-    {
-        "_id": {
-            "$oid": "65ef8fbc3779abc309eaa948"
-        },
-        "name": "Nike Air Force 1",
-        "price": 119.99,
-        "size": "62354b5f5bad6b6d92c9d6e3",
-        "quantity": 100,
-        "total_cost": 11999,
-        "brand": "62354b5f5bad6b6d92c9d6e4",
-        "color": "62354b5f5bad6b6d92c9d6e5",
-        "description": "Step up your sneaker game with the iconic Nike Air Force 1. Featuring a classic silhouette and premium materials, these shoes are a must-have for any sneaker enthusiast.",
-        "images": [
-            {
-                "$oid": "65f31b5c16857ee9e7304187"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304188"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304189"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730418a"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730418b"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730418c"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730418d"
-            }
-        ],
-        "comments": []
+    "name": "Nike React Infinity Run",
+    "price": 139.99,
+    "size": { "$oid": "65f619c9424aad40883dfeaf" },
+    "quantity": 120,
+    "total_cost": 16798.8,
+    "brand": { "$oid": "65e8805b11203bbfd2711802" },
+    "color": "62354b5f5bad6b6d92c9d6e5",
+    "description": "Elevate your running experience with the Nike React Infinity Run shoes. Designed to provide support and cushioning for long-distance runs, these shoes are a perfect choice for runners of all levels.",
+    "images": [
+      {
+        "$oid": "65f31b5c16857ee9e7304180"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304181"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304182"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304183"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304184"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304185"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304186"
+      }
+    ],
+    "comments": []
+  },
+  {
+    "_id": {
+      "$oid": "65ef8fbc3779abc309eaa948"
     },
-    {
-        "_id": {
-            "$oid": "65ef8fbc3779abc309eaa949"
-        },
-        "name": "Nike Zoom Pegasus Turbo 2",
-        "price": 159.99,
-        "size": "62354b5f5bad6b6d92c9d6e3",
-        "quantity": 80,
-        "total_cost": 12799.2,
-        "brand": "62354b5f5bad6b6d92c9d6e4",
-        "color": "62354b5f5bad6b6d92c9d6e5",
-        "description": "Run faster and farther with the Nike Zoom Pegasus Turbo 2. These lightweight and responsive shoes are designed to help you reach your running goals with ease.",
-        "images": [
-            {
-                "$oid": "65f31b5c16857ee9e730418e"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730418f"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304190"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304191"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304192"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304193"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304194"
-            }
-        ],
-        "comments": []
+    "name": "Nike Air Force 1",
+    "price": 119.99,
+    "size": { "$oid": "65f619c9424aad40883dfeb0" },
+    "quantity": 100,
+    "total_cost": 11999,
+    "brand": { "$oid": "65e8805b11203bbfd2711802" },
+    "color": "62354b5f5bad6b6d92c9d6e5",
+    "description": "Step up your sneaker game with the iconic Nike Air Force 1. Featuring a classic silhouette and premium materials, these shoes are a must-have for any sneaker enthusiast.",
+    "images": [
+      {
+        "$oid": "65f31b5c16857ee9e7304187"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304188"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304189"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730418a"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730418b"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730418c"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730418d"
+      }
+    ],
+    "comments": []
+  },
+  {
+    "_id": {
+      "$oid": "65ef8fbc3779abc309eaa949"
     },
-    {
-        "_id": {
-            "$oid": "65ef8fbc3779abc309eaa94a"
-        },
-        "name": "Nike Joyride Run Flyknit",
-        "price": 149.99,
-        "size": "62354b5f5bad6b6d92c9d6e3",
-        "quantity": 90,
-        "total_cost": 13499.1,
-        "brand": "62354b5f5bad6b6d92c9d6e4",
-        "color": "62354b5f5bad6b6d92c9d6e5",
-        "description": "Experience plush comfort with the Nike Joyride Run Flyknit. These shoes feature tiny foam beads underfoot that conform to your foot for maximum cushioning and support.",
-        "images": [
-            {
-                "$oid": "65f31b5c16857ee9e7304195"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304196"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304197"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304198"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e7304199"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730419a"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730419b"
-            }
-        ],
-        "comments": []
+    "name": "Nike Zoom Pegasus Turbo 2",
+    "price": 159.99,
+    "size": { "$oid": "65f619c9424aad40883dfeb1" },
+    "quantity": 80,
+    "total_cost": 12799.2,
+    "brand": { "$oid": "65e8805b11203bbfd2711802" },
+    "color": "62354b5f5bad6b6d92c9d6e5",
+    "description": "Run faster and farther with the Nike Zoom Pegasus Turbo 2. These lightweight and responsive shoes are designed to help you reach your running goals with ease.",
+    "images": [
+      {
+        "$oid": "65f31b5c16857ee9e730418e"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730418f"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304190"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304191"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304192"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304193"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304194"
+      }
+    ],
+    "comments": []
+  },
+  {
+    "_id": {
+      "$oid": "65ef8fbc3779abc309eaa94a"
     },
-    {
-        "_id": {
-            "$oid": "65ef8fbc3779abc309eaa94b"
-        },
-        "name": "Nike Free RN 5.0",
-        "price": 109.99,
-        "size": "62354b5f5bad6b6d92c9d6e3",
-        "quantity": 110,
-        "total_cost": 12098.9,
-        "brand": "62354b5f5bad6b6d92c9d6e4",
-        "color": "62354b5f5bad6b6d92c9d6e5",
-        "description": "Feel the freedom of natural motion with the Nike Free RN 5.0. These lightweight and flexible shoes are perfect for short runs and everyday wear.",
-        "images": [
-            {
-                "$oid": "65f31b5c16857ee9e730419c"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730419d"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730419e"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e730419f"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041a0"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041a1"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041a2"
-            }
-        ],
-        "comments": []
+    "name": "Nike Joyride Run Flyknit",
+    "price": 149.99,
+    "size": { "$oid": "65f619c9424aad40883dfeb2" },
+    "quantity": 90,
+    "total_cost": 13499.1,
+    "brand": { "$oid": "65e8805b11203bbfd2711802" },
+    "color": "62354b5f5bad6b6d92c9d6e5",
+    "description": "Experience plush comfort with the Nike Joyride Run Flyknit. These shoes feature tiny foam beads underfoot that conform to your foot for maximum cushioning and support.",
+    "images": [
+      {
+        "$oid": "65f31b5c16857ee9e7304195"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304196"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304197"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304198"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e7304199"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730419a"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730419b"
+      }
+    ],
+    "comments": []
+  },
+  {
+    "_id": {
+      "$oid": "65ef8fbc3779abc309eaa94b"
     },
-    {
-        "_id": {
-            "$oid": "65ef8fbc3779abc309eaa94c"
-        },
-        "name": "Nike Zoom Fly 3",
-        "price": 159.99,
-        "size": "62354b5f5bad6b6d92c9d6e3",
-        "quantity": 75,
-        "total_cost": 11999.25,
-        "brand": "62354b5f5bad6b6d92c9d6e4",
-        "color": "62354b5f5bad6b6d92c9d6e5",
-        "description": "Unleash your speed with the Nike Zoom Fly 3. These shoes feature a carbon-fiber plate for propulsive feel and responsive cushioning to help you set new personal records.",
-        "images": [
-            {
-                "$oid": "65f31b5c16857ee9e73041a3"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041a4"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041a5"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041a6"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041a7"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041a8"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041a9"
-            }
-        ],
-        "comments": []
+    "name": "Nike Free RN 5.0",
+    "price": 109.99,
+    "size": { "$oid": "65f619c9424aad40883dfeb3" },
+    "quantity": 110,
+    "total_cost": 12098.9,
+    "brand": { "$oid": "65e8805b11203bbfd2711802" },
+    "color": "62354b5f5bad6b6d92c9d6e5",
+    "description": "Feel the freedom of natural motion with the Nike Free RN 5.0. These lightweight and flexible shoes are perfect for short runs and everyday wear.",
+    "images": [
+      {
+        "$oid": "65f31b5c16857ee9e730419c"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730419d"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730419e"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e730419f"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041a0"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041a1"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041a2"
+      }
+    ],
+    "comments": []
+  },
+  {
+    "_id": {
+      "$oid": "65ef8fbc3779abc309eaa94c"
     },
-    {
-        "_id": {
-            "$oid": "65ef8fbc3779abc309eaa94d"
-        },
-        "name": "Nike Air Zoom Structure 22",
-        "price": 119.99,
-        "size": "62354b5f5bad6b6d92c9d6e3",
-        "quantity": 95,
-        "total_cost": 11399.05,
-        "brand": "62354b5f5bad6b6d92c9d6e4",
-        "color": "62354b5f5bad6b6d92c9d6e5",
-        "description": "Stay supported and comfortable on your runs with the Nike Air Zoom Structure 22. These stability shoes feature a secure fit and responsive cushioning to help reduce foot fatigue.",
-        "images": [
-            {
-                "$oid": "65f31b5c16857ee9e73041aa"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041ab"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041ac"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041ad"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041ae"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041af"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041b0"
-            }
-        ],
-        "comments": []
+    "name": "Nike Zoom Fly 3",
+    "price": 159.99,
+    "size": { "$oid": "65f619c9424aad40883dfeb4" },
+    "quantity": 75,
+    "total_cost": 11999.25,
+    "brand": { "$oid": "65e8805b11203bbfd2711802" },
+    "color": "62354b5f5bad6b6d92c9d6e5",
+    "description": "Unleash your speed with the Nike Zoom Fly 3. These shoes feature a carbon-fiber plate for propulsive feel and responsive cushioning to help you set new personal records.",
+    "images": [
+      {
+        "$oid": "65f31b5c16857ee9e73041a3"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041a4"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041a5"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041a6"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041a7"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041a8"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041a9"
+      }
+    ],
+    "comments": []
+  },
+  {
+    "_id": {
+      "$oid": "65ef8fbc3779abc309eaa94d"
     },
-    {
-        "_id": {
-            "$oid": "65ef8fbc3779abc309eaa94e"
-        },
-        "name": "Nike Epic React Flyknit 2",
-        "price": 149.99,
-        "size": "62354b5f5bad6b6d92c9d6e3",
-        "quantity": 85,
-        "total_cost": 12749.15,
-        "brand": "62354b5f5bad6b6d92c9d6e4",
-        "color": "62354b5f5bad6b6d92c9d6e5",
-        "description": "Experience smooth, responsive ride with the Nike Epic React Flyknit 2. These shoes feature a lightweight and durable design with plush cushioning for maximum comfort.",
-        "images": [
-            {
-                "$oid": "65f31b5c16857ee9e73041b1"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041b2"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041b3"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041b4"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041b5"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041b6"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041b7"
-            }
-        ],
-        "comments": []
+    "name": "Nike Air Zoom Structure 22",
+    "price": 119.99,
+    "size": { "$oid": "65f619c9424aad40883dfeb5" },
+    "quantity": 95,
+    "total_cost": 11399.05,
+    "brand": { "$oid": "65e8805b11203bbfd2711802" },
+    "color": "62354b5f5bad6b6d92c9d6e5",
+    "description": "Stay supported and comfortable on your runs with the Nike Air Zoom Structure 22. These stability shoes feature a secure fit and responsive cushioning to help reduce foot fatigue.",
+    "images": [
+      {
+        "$oid": "65f31b5c16857ee9e73041aa"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041ab"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041ac"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041ad"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041ae"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041af"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041b0"
+      }
+    ],
+    "comments": []
+  },
+  {
+    "_id": {
+      "$oid": "65ef8fbc3779abc309eaa94e"
     },
-    {
-        "_id": {
-            "$oid": "65ef8fbc3779abc309eaa94f"
-        },
-        "name": "Nike ZoomX Vaporfly NEXT% 2",
-        "price": 249.99,
-        "size": "62354b5f5bad6b6d92c9d6e3",
-        "quantity": 70,
-        "total_cost": 17499.3,
-        "brand": "62354b5f5bad6b6d92c9d6e4",
-        "color": "62354b5f5bad6b6d92c9d6e5",
-        "description": "Break your personal records with the Nike ZoomX Vaporfly NEXT% 2. These racing shoes feature responsive cushioning and a carbon-fiber plate for maximum propulsion.",
-        "images": [
-            {
-                "$oid": "65f31b5c16857ee9e73041b8"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041b9"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041ba"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041bb"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041bc"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041bd"
-            },
-            {
-                "$oid": "65f31b5c16857ee9e73041be"
-            }
-        ],
-        "comments": []
-    }
+    "name": "Nike Epic React Flyknit 2",
+    "price": 149.99,
+    "size": { "$oid": "65f619c9424aad40883dfeb6" },
+    "quantity": 85,
+    "total_cost": 12749.15,
+    "brand": { "$oid": "65e8805b11203bbfd2711802" },
+    "color": "62354b5f5bad6b6d92c9d6e5",
+    "description": "Experience smooth, responsive ride with the Nike Epic React Flyknit 2. These shoes feature a lightweight and durable design with plush cushioning for maximum comfort.",
+    "images": [
+      {
+        "$oid": "65f31b5c16857ee9e73041b1"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041b2"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041b3"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041b4"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041b5"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041b6"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041b7"
+      }
+    ],
+    "comments": []
+  },
+  {
+    "_id": {
+      "$oid": "65ef8fbc3779abc309eaa94f"
+    },
+    "name": "Nike ZoomX Vaporfly NEXT% 2",
+    "price": 249.99,
+    "size": { "$oid": "65f619c9424aad40883dfeb7" },
+    "quantity": 70,
+    "total_cost": 17499.3,
+    "brand": { "$oid": "65e8805b11203bbfd2711802" },
+    "color": "62354b5f5bad6b6d92c9d6e5",
+    "description": "Break your personal records with the Nike ZoomX Vaporfly NEXT% 2. These racing shoes feature responsive cushioning and a carbon-fiber plate for maximum propulsion.",
+    "images": [
+      {
+        "$oid": "65f31b5c16857ee9e73041b8"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041b9"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041ba"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041bb"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041bc"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041bd"
+      },
+      {
+        "$oid": "65f31b5c16857ee9e73041be"
+      }
+    ],
+    "comments": []
+  }
 ]

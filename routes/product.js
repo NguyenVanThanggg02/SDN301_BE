@@ -9,6 +9,7 @@ productRouter.get('/', productController.getAllProducts);
 
 //get product
 productRouter.get('/:id', productController.getProductById);
+productRouter.delete('/:id', productController.removeProductById );
 //POSR :/products
 productRouter.post('/createProduct', productController.createProduct);
 
