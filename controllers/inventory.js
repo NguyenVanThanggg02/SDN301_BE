@@ -70,3 +70,23 @@ export const getAllProductInInventory = async (req, res) => {
         res.status(500).json({ message: 'Internal server error' });
     }
 }
+export const getTotalOfStock = async (req, res) => {
+    try {
+        const totalQuantity = await Inventory.aggregate([
+            { $match: { type: "in" } },
+            { $group: { _id: null, total: { $sum: "$quantity" } } }
+        ]);
+
+        if (totalQuantity.length === 0) {
+            res.json({ total: 0 });
+        } else {
+            res.json({
+                total: totalQuantity[0].total,
+                mess: "Get data successfully!",
+                status: true
+            });
+        }
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+}

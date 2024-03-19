@@ -1,9 +1,10 @@
 import express from "express";
-import { addToCart, changStatusOrder, countOrder, listCart } from "../controllers/order.js";
+import { addToCart, changStatusOrder, countOrder, getAllOrder, listCart } from "../controllers/order.js";
 
 const orderRouter = express.Router();
 
 //get all orders
+orderRouter.get('/getAll', getAllOrder);
 orderRouter.get('/getOrderDetail', listCart);
 orderRouter.get('/countOrdersToDeliver', countOrder);
 

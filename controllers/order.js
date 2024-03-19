@@ -1,3 +1,4 @@
+import moment from "moment";
 import Image from "../models/images.js";
 import Inventory from "../models/inventory.js";
 import Order from "../models/order.js";
@@ -130,5 +131,31 @@ export const countOrder = async (req, res) => {
         console.error("Error:", error);
         res.status(500).json({ message: "Internal server error" });
 
+    }
+}
+export const getAllOrder = async (req, res) => {
+    try {
+        let filter = {};
+        if (req.query.status) {
+            filter.status = req.query.status;
+        }
+
+        const orders = await Order.find(filter).populate('user');
+
+        const ordersWithDate = orders.map(order => {
+            const orderWithDate = {
+                ...order.toObject(),
+                date: moment(order.orderDate).add(3, 'days').toDate()
+            };
+            return orderWithDate;
+        });
+
+        res.json({
+            data: ordersWithDate,
+            mess: "Get data successfully!",
+            status: true
+        });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
     }
 }
