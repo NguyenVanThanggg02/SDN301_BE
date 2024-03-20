@@ -5,6 +5,5 @@ const brandRouter = express.Router();
 
 
 brandRouter.get('/listBrand', brandController.getAllBrands);
-brandRouter.get('/:id', brandController.fetBrandByProductId);
 
 export default brandRouter;

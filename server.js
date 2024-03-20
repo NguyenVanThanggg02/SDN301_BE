@@ -25,8 +25,9 @@ app.use('/sizes', sizeRouter)
 app.use('/images', imageRouter)
 app.use('/inventory', inventoryRouter)
 app.use('/search', searchRouter)
-
 app.use('/brands', brandRouter)
+
+
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");

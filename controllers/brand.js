@@ -10,18 +10,7 @@ const getAllBrands = async (req, res) => {
     });
   }
 };
-const fetBrandByProductId = async (req, res) => {
-  try {
-    const brandById = await brandDAO.getBrandByProductId(req.params.id);
-    res.status(200).json(brandById);
-  } catch (error) {
-    res.status(500).json({
-      error: error.toString(),
-    });
-  }
-}
+
 
 export default {
-  getAllBrands,
-  fetBrandByProductId
-}
+  getAllBrands}

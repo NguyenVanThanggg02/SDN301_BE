@@ -67,7 +67,17 @@ const removeProductById = async (req, res) => {
   };
 
 
+  const fetchProductByBrandId = async (req, res) => {
+    try {
+      const brandById = await productDAO.getProductByBrandId(req.params.id);
+      res.status(200).json(brandById);
+    } catch (error) {
+      res.status(500).json({
+        error: error.toString(),
+      });
+    }
+  }
 
 export default {
-    getAllProducts, getProductById, createProduct,removeProductById
+    getAllProducts, getProductById, createProduct,removeProductById, fetchProductByBrandId
 }
